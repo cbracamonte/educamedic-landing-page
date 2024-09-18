@@ -1,0 +1,6 @@
+<educamedic-navbar />
+<main [ngClass]="darkModeService.darkModeSignal()">
+  <section class="bg-white dark:bg-gray-800">
+    <router-outlet></router-outlet>
+  </section>
+</main>

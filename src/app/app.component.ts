@@ -1,17 +1,17 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
+import { initFlowbite } from "flowbite";
+import { SHARED_COMPONENTS } from "./shared/shared";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
-  styles: [],
+  imports: [RouterOutlet, ...SHARED_COMPONENTS],
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.scss",
 })
-export class AppComponent {
-  title = 'educamedic-certificate-generator';
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }

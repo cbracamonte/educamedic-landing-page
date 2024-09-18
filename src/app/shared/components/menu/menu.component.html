@@ -1,0 +1,78 @@
+<ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+  <li>
+    <a
+      class="block py-2 pr-4 pl-3 text-gray-400 border-b border-gray-100 hover:bg-primary-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 lg:dark:hover:text-white dark:hover:bg-primary-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+      [routerLink]="['/']"
+      [routerLinkActive]="[
+        'lg:text-primary-700',
+        'lg:bg-transparent',
+        'bg-primary-700',
+        'text-white',
+        'dark:text-white'
+      ]"
+      [routerLinkActiveOptions]="{ exact: true }"
+      aria-current="page"
+      >Inicio</a
+    >
+  </li>
+  <li>
+    <a
+      [routerLink]="['/courses']"
+      [routerLinkActive]="[
+        'lg:text-primary-700',
+        'lg:bg-transparent',
+        'bg-primary-700',
+        'text-white',
+        'dark:text-white'
+      ]"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="block py-2 pr-4 pl-3 text-gray-400  border-b border-gray-100 hover:bg-primary-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0  lg:dark:hover:text-white dark:hover:bg-primary-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+      >Cursos</a
+    >
+  </li>
+  <li>
+    <a
+      href="#"
+      [routerLink]="['/certificates']"
+      [routerLinkActive]="[
+        'lg:text-primary-700',
+        'lg:bg-transparent',
+        'bg-primary-700',
+        'text-white'
+      ]"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="block py-2 pr-4 pl-3 text-gray-400  border-b border-gray-100 hover:bg-primary-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-primary-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+      >Certificaciones</a
+    >
+  </li>
+  <li>
+    <a
+      href="#"
+      [routerLink]="['/pricing']"
+      [routerLinkActive]="[
+        'lg:text-primary-700',
+        'lg:bg-transparent',
+        'bg-primary-700',
+        'text-white'
+      ]"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="block py-2 pr-4 pl-3 text-gray-400 border-b border-gray-100 hover:bg-primary-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-primary-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+      >Precios</a
+    >
+  </li>
+  <li>
+    <a
+      href="#"
+      [routerLink]="['/contact']"
+      [routerLinkActive]="[
+        'lg:text-primary-700',
+        'lg:bg-transparent',
+        'bg-primary-700',
+        'text-white'
+      ]"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="block py-2 pr-4 pl-3 text-gray-400  border-b border-gray-100 hover:bg-primary-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-primary-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+      >Contacto</a
+    >
+  </li>
+</ul>
