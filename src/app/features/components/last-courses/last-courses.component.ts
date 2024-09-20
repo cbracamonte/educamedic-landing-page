@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-    selector: 'educamedic-pricings',
+    selector: 'educamedic-last-courses',
     standalone: true,
     imports: [
         CommonModule,
     ],
-    templateUrl: './pricings.component.html',
-    styleUrl: './pricings.component.css',
+    templateUrl: './last-courses.component.html',
+    styleUrl: './last-courses.component.css',
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PricingsComponent { }
+export class LastCoursesComponent { }

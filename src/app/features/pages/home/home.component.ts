@@ -1,7 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FeaturesComponent } from "../../components/features/features.component";
-import { PricingsComponent } from '../../components/pricings/pricings.component';
+import { PricingComponent } from '../../components/pricing/pricing.component';
+import { CoursesComponent } from "../courses/courses.component";
+import { LastCoursesComponent } from "../../components/last-courses/last-courses.component";
 
 @Component({
     selector: 'educamedic-home',
@@ -9,7 +11,9 @@ import { PricingsComponent } from '../../components/pricings/pricings.component'
     imports: [
     CommonModule,
     FeaturesComponent,
-    PricingsComponent
+    PricingComponent,
+    CoursesComponent,
+    LastCoursesComponent
 ],
     templateUrl: './home.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
