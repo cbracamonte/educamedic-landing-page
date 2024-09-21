@@ -1,17 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Pricing } from '../../../core/interfaces/data.interface';
+import { Contact } from '../../../core/interfaces/data.interface';
 
 @Component({
-    selector: 'educamedic-pricing',
+    selector: 'educamedic-contact',
     standalone: true,
     imports: [
         CommonModule,
     ],
-    templateUrl: './pricing.component.html',
-    styleUrl: './pricing.component.scss',
+    templateUrl: './contact.component.html',
+    styleUrl: './contact.component.css',
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PricingComponent { 
-    @Input() data!: Pricing;
+export class ContactComponent {
+    @Input() data!: Contact;
 }

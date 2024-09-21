@@ -1,19 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Courses } from '../../../core/interfaces/data.interface';
 import { RouterModule } from '@angular/router';
+import { Instructors } from '../../../core/interfaces/data.interface';
 
 @Component({
-    selector: 'educamedic-last-courses',
+    selector: 'educamedic-instructors',
     standalone: true,
     imports: [
         CommonModule,
         RouterModule,
     ],
-    templateUrl: './last-courses.component.html',
-    styleUrl: './last-courses.component.css',
+    templateUrl: './instructors.component.html',
+    styleUrl: './instructors.component.css',
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LastCoursesComponent { 
-    @Input() data!: Courses;
+export class InstructorsComponent { 
+    @Input({
+        required: true,
+    }) data!: Instructors;
 }

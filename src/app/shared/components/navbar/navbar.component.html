@@ -1,4 +1,4 @@
-<header [ngClass]="darkModeService.darkModeSignal()">
+<header class="fixed w-full z-10" [ngClass]="darkModeService.darkModeSignal()">
   <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
     <div
       class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
@@ -17,10 +17,12 @@
           alt="educamedic-logo"
         />
         }
-        <span
-          class="self-center text-xl font-semibold whitespace-nowrap text-primary-700 dark:text-white"
-          >Educamedic</span
-        >
+        <a class="cursor-pointer" [href]="'/'">
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap text-primary-700 dark:text-white"
+            >Educamedic</span
+          >
+        </a>
       </a>
       <div class="flex items-center lg:order-2">
         <!-- <a
