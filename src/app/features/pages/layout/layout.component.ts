@@ -9,7 +9,6 @@ import { DarkModeService } from "../../../shared/services/dark-mode.service";
   standalone: true,
   imports: [CommonModule, RouterModule, NavbarComponent],
   templateUrl: "./layout.component.html",
-  styleUrls: ["./layout.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LayoutComponent {

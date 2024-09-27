@@ -9,7 +9,6 @@ import { Contact } from '../../../core/interfaces/data.interface';
         CommonModule,
     ],
     templateUrl: './contact.component.html',
-    styleUrl: './contact.component.css',
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContactComponent {

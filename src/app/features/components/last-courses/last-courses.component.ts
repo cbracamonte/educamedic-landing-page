@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
         RouterModule,
     ],
     templateUrl: './last-courses.component.html',
-    styleUrl: './last-courses.component.css',
+    styleUrl: './last-courses.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LastCoursesComponent { 

@@ -6,7 +6,6 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
   standalone: true,
   imports: [CommonModule],
   templateUrl: "./courses.component.html",
-  styleUrl: "./courses.component.css",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CoursesComponent {}

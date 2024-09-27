@@ -11,7 +11,6 @@ import { Instructors } from '../../../core/interfaces/data.interface';
         RouterModule,
     ],
     templateUrl: './instructors.component.html',
-    styleUrl: './instructors.component.css',
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InstructorsComponent { 

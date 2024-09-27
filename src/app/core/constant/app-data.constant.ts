@@ -3,46 +3,54 @@ import { AppData } from "../interfaces/data.interface";
 export const APP_DATA: AppData = {
   home: {
     intro: {
-      title: "Impulsa tu Éxito en Salud con Certificaciones de Excelencia",
+      title: "Certifícate y Destaca en el Sector Salud",
       description:
-        "Conviértete en un profesional destacado, listo para enfrentar los desafíos del mundo de la salud actual",
-      mainActionText: "Explorar",
-      secondaryActionText: "Contáctanos",
+        "Accede a cursos estratégicos certificados que impulsarán tu profesión. ¡Destaca en el competitivo mundo de la salud hoy mismo!",
+      route: [
+        {
+          title: "Explorar",
+          url: "/courses",
+        },
+        {
+          title: "Contáctanos",
+          url: "/contact",
+        },
+      ],
     },
     features: {
-      title: "Diseñamos programas estratégicos y certificados",
+      title: "¿Por qué elegir nuestros cursos de capacitación?",
       description:
-        "Ideales para atender las demandas de convocatorias en instituciones del sector Salud. Aprende con los mejores, certifícate y destaca en un mercado competitivo.",
+        "Nuestros cursos, diseñados por especialistas, te brindan las herramientas para enfrentar con éxito las exigencias del dinámico y competitivo sector salud.",
       items: [
         {
           title: "Certificación",
           description:
-            "Obtén certificados válidos por instituciones de salud a nivel público y privado , elevando tu perfil profesional.",
+            "Obtén certificados válidos y reconocidos por instituciones de salud públicas y privadas.",
         },
         {
           title: "Expertise",
           description:
-            "Aprende de especialistas en el sector garantizando una formación de primer nivel.",
+            "Aprende de especialistas con amplia experiencia que te guiarán en tu proceso de aprendizaje.",
         },
         {
           title: "Actualizado",
           description:
-            "Nuestros programas están actualizados con las últimas investigaciones y bajo demanda del sector",
+            "Inspiradas en investigaciones recientes y tendencias del sector, nuestras clases te mantendrán actualizado.",
         },
         {
           title: "Modalidades",
           description:
-            "Elige cómo aprender: Certifícate antes (asíncrono) o después (síncrono) del curso. ¡Tú tienes el control!",
+            "Toma el control de tu formación, certifica tus conocimientos en el momento que prefieras y lleva tu carrera al siguiente nivel.",
         },
         {
           title: "Flexibilidad",
           description:
-            "Obtén certificados válidos por instituciones de salud, elevando tu perfil profesional.",
+            "Accede a nuestros cursos desde cualquier lugar y dispositivo, adaptándose a tu estilo de vida.",
         },
         {
           title: "Interactivo",
           description:
-            "Asesoría en tiempo real con nuestros especialistas, quienes resolverán todas tus dudas y te guiarán en tu aprendizaje.",
+            "Conéctate con nuestros especialistas en tiempo real para resolver tus dudas y enriquecer tu experiencia educativa.",
         },
       ],
     },
@@ -50,13 +58,19 @@ export const APP_DATA: AppData = {
       title: "Conéctate con los mejores profesionales de la salud",
       description:
         "Aprende de los mejores especialistas en el sector y conviértete en un profesional destacado.",
-      actionText: "Conoce a nuestros especialistas",
+      route: {
+        title: "¡Conócelos!",
+        url: "/instructors",
+      },
     },
     courses: {
-      title: "Nuestros programas impulsa tu crecimiento profesional",
+      title: "Potencia tu carrera con nuestros cursos especializados",
       description:
-        "Desarrollados según las tendencias del sector salud, con el respaldo de especialistas comprometidos con la excelencia educativa.",
-      actionText: "Conoce más de nuestros programas",
+        "Nuestros cursos te ofrecen el impulso que necesitas para destacar en salud. ¡Elige el que mejor se adapte a tus metas!",
+      route: {
+        title: "!Descubre más!",
+        url: "/courses",
+      },
     },
     pricing: {
       title: "Certificate con nosotros",
@@ -93,13 +107,22 @@ export const APP_DATA: AppData = {
           ],
         },
       ],
-      actionText: "¡Consigue el tuyo!",
+      route: {
+        title: "¡Lo Quiero!",
+        url: "/certification",
+      },
     },
     contact: {
       title: "¿Necesitas ayuda?",
       description:
         "Contáctanos para recibir asesoría personalizada y resolver todas tus dudas.",
       actionText: "Contáctanos",
-    }
+    },
+  },
+  notFound: {
+    title: "¡Ups! Página no encontrada",
+    description:
+      "La página que buscas no existe. Por favor, verifica la URL e inténtalo de nuevo.",
+    actionText: "Volver al inicio",
   },
 };

@@ -3,11 +3,15 @@ export interface FeatureItem {
   description: string;
 }
 
+export interface OptionRoute {
+  title: string;
+  url: string;
+}
+
 export interface Intro {
   title: string;
   description: string;
-  mainActionText: string;
-  secondaryActionText?: string;
+  route: OptionRoute[];
 }
 
 export interface Features {
@@ -19,7 +23,7 @@ export interface Features {
 export interface Courses {
   title: string;
   description: string;
-  actionText: string;
+  route: OptionRoute;
 }
 
 export interface PricingItem {
@@ -33,7 +37,7 @@ export interface Pricing {
   title: string;
   description: string;
   items: PricingItem[];
-  actionText: string;
+  route: OptionRoute;
 }
 
 export interface Home {
@@ -48,7 +52,7 @@ export interface Home {
 export interface Instructors {
   title: string;
   description: string;
-  actionText: string;
+  route: OptionRoute;
 }
 
 export interface Contact {
@@ -57,6 +61,13 @@ export interface Contact {
   actionText: string;
 }
 
+export interface NotFound {
+  title: string;
+  description: string;
+  actionText: string;
+}
+
 export interface AppData {
   home: Home;
+  notFound: NotFound;
 }

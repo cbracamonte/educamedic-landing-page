@@ -9,7 +9,6 @@ import { DarkModeService } from '../../../shared/services/dark-mode.service';
         CommonModule,
     ],
     templateUrl: './footer.component.html',
-    styleUrl: './footer.component.css',
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterComponent {
