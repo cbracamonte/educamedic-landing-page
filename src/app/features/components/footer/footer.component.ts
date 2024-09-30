@@ -12,4 +12,5 @@ import { DarkModeService } from '../../../shared/services/dark-mode.service';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterComponent {
+    currentYear: number = new Date().getFullYear();
  }
