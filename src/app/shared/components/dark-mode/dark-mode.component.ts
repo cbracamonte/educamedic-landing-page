@@ -11,9 +11,9 @@ import { DarkModeService } from "../../services/dark-mode.service";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DarkModeComponent {
-  darkModeService: DarkModeService = inject(DarkModeService);
+  readonly darkModeService$: DarkModeService = inject(DarkModeService);
 
   toggleDarkMode(): void {
-    this.darkModeService.updateDarkMode();
+    this.darkModeService$.updateDarkMode();
   }
 }

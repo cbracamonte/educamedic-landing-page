@@ -14,6 +14,6 @@ import { MenuComponent } from "../menu/menu.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavbarComponent {
-  darkModeService: DarkModeService = inject(DarkModeService);
+  readonly darkModeService$: DarkModeService = inject(DarkModeService);
   
 }

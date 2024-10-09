@@ -1,5 +1,10 @@
 import { CommonModule } from "@angular/common";
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  OnInit,
+} from "@angular/core";
 import { FeaturesComponent } from "../../components/features/features.component";
 import { PricingComponent } from "../../components/pricing/pricing.component";
 import { CoursesComponent } from "../courses/courses.component";
@@ -25,15 +30,11 @@ import { FooterComponent } from "../../components/footer/footer.component";
     LastCoursesComponent,
     InstructorsComponent,
     ContactComponent,
-    FooterComponent
-],
+    FooterComponent,
+  ],
   templateUrl: "./home.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent implements OnInit {
-  appData$!: Observable<AppData>;
-  constructor(private readonly _dataService: DataService) {}
-  ngOnInit(): void {
-    this.appData$ = this._dataService.getAppData();
-  }
+export class HomeComponent {
+  appData$: Observable<AppData> = inject(DataService).getAppData(); 
 }

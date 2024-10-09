@@ -1,10 +1,10 @@
-<header [ngClass]="darkModeService.darkModeSignal()">
+<header [ngClass]="darkModeService$.darkModeSignal()">
   <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
     <div
       class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
     >
       <a class="flex items-center">
-        @if (darkModeService.darkModeSignal() !== 'dark'){
+        @if (darkModeService$.darkModeSignal() !== 'dark'){
         <img
           class="mr-3 h-6 sm:h-9 dark:hidden"
           src="assets/images/logo-to-light.svg"
