@@ -5,6 +5,7 @@ import { FilterSortComponent } from "../../../shared/components/filter-sort/filt
 import { CourseComponent } from "../../components/course/course.component";
 import { CoursesService } from "../../services/courses/services/courses.service";
 import { ICourseQueryParams } from "../../services/courses/interfaces/course-query-params.interface";
+import { RouterModule } from "@angular/router";
 
 @Component({
   selector: "educamedic-courses",
@@ -14,6 +15,7 @@ import { ICourseQueryParams } from "../../services/courses/interfaces/course-que
     BreadcrumbComponent,
     FilterSortComponent,
     CourseComponent,
+    RouterModule,
   ],
   templateUrl: "./courses.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush,

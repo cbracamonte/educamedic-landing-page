@@ -14,8 +14,8 @@
       </div>
       <educamedic-filter-sort></educamedic-filter-sort>
     </div>
-    <div
-      class="mb-4 grid gap-4 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 xl:grid-cols-4"
+    <section
+      class="max-w-screen-xl px-4 mx-auto 2xl:px-0 grid lg:gap-24 sm:gap-8"
     >
       <ng-container *ngIf="coursesSignal$() as courses; else loading">
         <ng-container
@@ -37,7 +37,7 @@
       <ng-template #noCourses>
         <p>No se encontraron cursos disponibles.</p></ng-template
       >
-    </div>
+    </section>
     <div class="w-full text-center">
       <button
         type="button"
@@ -49,3 +49,4 @@
   </div>
 </section>
 <ng-template #loading>Cargando...</ng-template>
+<router-outlet></router-outlet>
