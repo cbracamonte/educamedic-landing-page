@@ -1,4 +1,4 @@
-import { ApplicationConfig } from "@angular/core";
+import { ApplicationConfig, isDevMode } from "@angular/core";
 import {
   NavigationError,
   provideRouter,
@@ -18,6 +18,7 @@ import {
 import { ENVIRONMENT } from "./core/tokens/environment.token";
 import { environment } from "../environments/environment";
 import { HttpToastInterceptor } from "./core/interceptors/http-toast.interceptor";
+import { provideServiceWorker } from '@angular/service-worker';
 // import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptors, withInterceptorsFromDi } from '@angular/common/http';
 // import { HttpInterceptorService } from 'src/interceptors/authorize.interceptor';
 
@@ -38,7 +39,10 @@ export const appConfig: ApplicationConfig = {
       })
     ),
     provideAnimationsAsync(),
-    provideHttpClient(withInterceptors([HttpToastInterceptor])),
+    provideHttpClient(withInterceptors([HttpToastInterceptor])), provideServiceWorker('ngsw-worker.js', {
+            enabled: !isDevMode(),
+            registrationStrategy: 'registerWhenStable:30000'
+          }),
     
     // provideToastr(),
     // provideHttpClient(
